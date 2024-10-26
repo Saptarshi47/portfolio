@@ -1,0 +1,136 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 60px 0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skills-title {
+    position: relative;
+}
+
+.skills-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.skills-name {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.skills-button {
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(267deg, #007bff 0.36%, #B923E1 102.06%);
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.skills-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.skills-icon {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    top: 28px;
+}
+
+.skill-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+
+@media (max-width: 1024px) {
+    .skills {
+        padding: 30px;
+    }
+    .skills-heading {
+        font-size: 2rem;
+    }
+    .skills-name {
+        gap: 30px;
+    }
+    .skill-image {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-heading {
+        font-size: 1.8rem;
+    }
+    .skills-name {
+        gap: 20px;
+    }
+    .skill-image {
+        height: 70px;
+        width: 70px;
+    }
+    .skills-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        padding: 20px;
+        gap: 30px;
+    }
+    .skills-heading {
+        font-size: 1.5rem;
+    }
+    .skills-name {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .skill-image {
+        height: 60px;
+        width: 60px;
+    }
+    .skills-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
